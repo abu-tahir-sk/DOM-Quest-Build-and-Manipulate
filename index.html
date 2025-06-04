@@ -1,11 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  data-theme="light">
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- google font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-primary': '#B4F461',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+.lexend-google-font {
+  font-family: "Lexend", sans-serif;
+}
+
+  </style>
 </head>
-<body>
+<body class="lexend-google-font">
+      <header class="mx-auto sticky top-0 z-40 pb-4 bg-slate-50">
+            <!-- navbar -->
+          <div>
+        <div style="background-image: linear-gradient(to right,  rgb(249, 202, 202));" class="navbar px-12 md:px-4">
+              <div class="navbar-start">
+                  <a class="btn bg-btn-primary text-black">HOME</a>
+              </div>
+              <div class="navbar-center hidden lg:flex gap-4">
+                  <img src="assets/logo.png" alt="">
+                  <h2 class="text-3xl text-black">Donate Bangladesh</h2>
+              </div>
+              <div class="navbar-end">
+                    <img class="pr-2" src="assets/coin.png" alt="">
+                  <a id="donate-number" class="btn-ghost text-black">5500 BDT</a>
+              </div>
+      </div>
+          </div>
+           <!-- button -->
+         <div class="text-center mt-6 flex justify-center items-center gap-6">
+          <button id="show-add-card-btn" class="btn btn-outline bg-btn-primary">Donation</button>
+           <button id="history-btn" class="btn btn-outline bg-btn-primary">History</button>
+           </div>
+         
+      </header>
+      <main class="md:container mx-auto">
+        
+        <!-- card section -->
+      <section id="donate-card" class="md:container mx-auto">
+           
+       <!-- card 1 -->
+      <div class="hero min-h-screen shadow-xl shadow-teal-200">
+        <div class="hero-content flex-col lg:flex-row shadow-2xl w-full md:w-11/12 rounded-lg">
+          <figure>
+            <img
+              src="assets/202409-PSE-09_scr.webp"
+                  alt="Shoes" />
+                  </figure>
+              <div class="w-full md:w-1/2">
       
+                <div class="shadow btn btn-sm">
+                    <img src="assets/coin.png" alt="">
+                      <p id="add-donate">0 BDT</p>
+                      </div>
+                        <h1 class="text-2xl font-bold">Donate for Flood at GAZA</h1>
+                      <p class="py-6">
+                        The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                               </p>
+                          <input
+                          type="text" id="input-add-donate"
+                         placeholder="Write Donation Amount"
+                      class="input border-fuchsia-200 input-error w-full" />
+                  <div class="text-center">
+                <button id="btn-donate" class="btn bg-btn-primary mt-3">Donate Now</button>
+
+                <div id="overlay">
+                  <h1></h1>
+                </div>
+
+              </div>
+            </div>
+          </div> 
+        </div>
+          <!-- card 2 -->
+  <div class="hero min-h-screen shadow-xl shadow-teal-100">
+    <div class="hero-content flex-col lg:flex-row shadow-2xl w-full md:w-11/12 rounded-lg">
+            <figure>
+              <img
+                src="assets/noakhali.png"
+                  alt="Shoes" />
+            </figure>
+              <div class="w-full md:w-1/2">
+      
+              <div class="shadow btn btn-sm">
+                <img src="assets/coin.png" alt="">
+                <p>0 BDT</p>
+              </div>
+      
+               <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                  <p class="py-6">
+                    The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+                  </p>
+                <input
+              type="text"
+            placeholder="Write Donation Amount"
+          class="input input-bordered input-error w-full" />
+          <div class="text-center">
+        <button class="btn bg-btn-primary mt-1">Donate Now</button>
+       </div>
+      </div>
+    </div> 
+  </div>
+          <!-- card 3 -->
+          <div class="hero min-h-screen shadow-xl shadow-teal-100">
+  <div class="hero-content flex-col lg:flex-row shadow-2xl w-full md:w-11/12 rounded-lg">
+    <figure>
+    <img
+      src="assets/feni.png"
+      alt="Shoes" />
+  </figure>
+    <div class="w-full md:w-1/2">
+      
+       <div class="shadow btn btn-sm">
+        <img src="assets/coin.png" alt="">
+         <p>0 BDT</p>
+      </div>
+      
+      <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+      <p class="py-6">
+        The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+      </p>
+      <input
+     type="text"
+        placeholder="Write Donation Amount"
+          class="input input-bordered input-error w-full" />
+     <div class="text-center">
+      <button class="btn bg-btn-primary mt-1">Donate Now</button>
+     </div>
+    </div>
+  </div> 
+          </div>
+          <div class="hero min-h-screen shadow-xl shadow-teal-100">
+          <div class="hero-content flex-col lg:flex-row shadow-2xl w-full md:w-11/12 rounded-lg">
+    <figure>
+    <img
+      src="assets/quota-protest.png"
+      alt="Shoes" />
+  </figure>
+    <div class="w-full md:w-1/2">
+      
+       <div class="shadow btn btn-sm">
+        <img src="assets/coin.png" alt="">
+         <p>0 BDT</p>
+      </div>
+      
+      <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+      <p class="py-6">
+        The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+      </p>
+      <input
+     type="text"
+        placeholder="Write Donation Amount"
+          class="input input-bordered input-error w-full" />
+     <div class="text-center">
+      <button class="btn bg-btn-primary mt-1">Donate Now</button>
+     </div>
+    </div>
+          </div> 
+          </div>
+          <!-- card 4 -->
+      <div class="hero min-h-screen shadow-xl shadow-teal-100">
+        <div class="hero-content flex-col lg:flex-row shadow-2xl w-full md:w-11/12 rounded-lg">
+    <figure>
+    <img
+    
+      src="assets/202409-PSE-09_scr.webp"
+      alt="Shoes" />
+  </figure>
+    <div class="w-full md:w-1/2">
+      
+       <div class="shadow btn btn-sm">
+        <img src="assets/coin.png" alt="">
+         <p>0 BDT</p>
+      </div>
+      
+      <h1 class="text-2xl font-bold">Donate for jakat at GAZA</h1>
+      <p class="py-6">
+        The recent floods in GAZA have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+      </p>
+      <input
+     type="text"
+        placeholder="Write Donation Amount"
+          class="input input-bordered input-error w-full" />
+     <div class="text-center">
+      <button class="btn bg-btn-primary mt-1">Donate Now</button>
+     </div>
+    </div>
+       </div> 
+      </div>
+    </section>
+    <section id="history-section" class="hidden">
+              <h1>History</h1>
+    </section>
+  </main>
+  <script src="js/utilities.js"></script>
+  <script src="js/donatBDT.js"></script>
+  <script src="js/donate.js"></script>
+
 </body>
 </html>
