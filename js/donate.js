@@ -40,17 +40,17 @@
                 
                const m = document.getElementById("message-container");
                m.innerHTML = `
-              <div class="rounded-lg text-center shadow-2xl bg-white py-6 fixed top-1/3 left-1/3 right-1/3 border border-solid w-1/3 z-40">
-               <h3 class="font-bold text-3xl pb-3">Congrates!</h3>
+              <div class="rounded-lg text-center shadow-2xl bg-white py-6 fixed top-1/3 left-1/3 right-1/3 border border-solid w-3/12">
+               <h3 class="font-bold text-3xl pb-2">Congrates!</h3>
                <img class="mx-auto" src="assets/coin.png" alt="">
                 
                </br>
                <p class="text-gray-400">You Have Donated for Humankind</p>
                </br>
-               <h3 class="font-bold pb-3">Successfully</h3>
+               <h3 class="font-bold">Successfully</h3>
                </br>
 
-               <button id="success-btn" class="btn bg-btn-primary ">Close confirmation</button>
+               <button id="success-btn" class="btn bg-btn-primary">Close confirmation</button>
                </div>
                ` ;
                m.style.display = "flex";
