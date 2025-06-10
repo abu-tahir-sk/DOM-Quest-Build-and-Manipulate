@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="lg" data-theme="light">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blog</title>
+       <title>Document</title>
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- google font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-primary': '#B4F461',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+.lexend-google-font {
+  font-family: "Lexend", sans-serif;
+}
+
+  </style>
+</head>
+<body>
+       <header class="mx-auto sticky top-0 z-40 bg-slate-50">
+            <!-- navbar -->
+          <div>
+        <div style="background-image: linear-gradient(to right,  rgb(246, 231, 231));" class="navbar px-12 md:px-4">
+              <div class="navbar-start">
+                  <a id="home-to-blog" class="btn bg-btn-primary text-black" onclick="goBack()">Blog</a>
+              </div>
+              <div class="navbar-center hidden lg:flex gap-4">
+                  <img src="assets/logo.png" alt="">
+                  <h2 class="text-3xl text-black">Donate Bangladesh</h2>
+              </div>
+              <div class="navbar-end">
+                    <img class="pr-2" src="assets/coin.png" alt="">
+                  <a id="donate-number" class="btn-ghost  text-black">5500 BDT</a>
+              </div>
+      </div>
+          </div>
+          
+         
+      </header>
+      <main>
+            <div>
+            <h2 class="text-5xl font-bold px-6 py-6">Important FAQ   <i class="fa-solid fa-comments"></i></h2>
+<div class="collapse collapse-arrow bg-base-200">
+  <input type="radio" name="my-accordion-2" checked="checked" />
+  <div class="collapse-title text-xl font-medium">What is Document Object Model (DOM)?</div>
+  <div class="collapse-content">
+    <p>ডকুমেন্ট অবজেক্ট মডেল (DOM) হল HTML এবং XML সহ ওয়েব ডকুমেন্টের জন্য একটি প্রোগ্রামিং ইন্টারফেস । এটি প্রোগ্রামগুলিকে একটি নথির বিষয়বস্তু, গঠন এবং শৈলী অ্যাক্সেস এবং পরিচালনা করার অনুমতি দেয়। মূলত, DOM একটি ওয়েব ডকুমেন্টকে একটি গাছের মতো কাঠামো হিসেবে উপস্থাপন করে, যেখানে ডকুমেন্টের প্রতিটি উপাদানকে গাছের নোড হিসেবে উপস্থাপন করা হয়।</p>
+  </div>
+</div>
+<div class="collapse collapse-arrow bg-base-200">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-medium">How do you select an element from the DOM ?</div>
+  <div class="collapse-content">
+    <p>The initial step is to choose, or locate the correct element within the DOM. Similar to how you select text in a word processor for editing, this selection can be accomplished through different methods, such as . getElementById() and . querySelector() .</p>
+  </div>
+</div>
+<div class="collapse collapse-arrow bg-base-200">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+  <div class="collapse-content">
+    <p>hEvent delegation is a technique in JavaScript where a single event listener is attached to a parent element, rather than attaching individual event listeners to each child element within that parent. This parent listener then handles events that bubble up from its children. </p>
+  </div>
+</div>
+<div class="collapse collapse-arrow bg-base-200">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM ?</div>
+  <div class="collapse-content">
+    <p>We can manipulate or change the DOM elements by using the following methods:
+Change the Content of an Element. ...
+Manipulate the Class Attribute. ...
+Set CSS Styles Using JavaScript. ...
+Create, Add, and Remove Elements. ...
+Insert Elements at a Specific Position. ...
+Manipulate Element Attributes. ...
+Manipulate Data Attributes.</p>
+  </div>
+ </div>
+</div>
+      </main>
+      <script>
+            function goBack(){
+                  window.history.back();
+            }
+      </script>
+      <script src="js/utilities.js"></script>
+      <!-- <script src="js/donatBDT.js"></script> -->
+      <!-- <script src="js/donate.js"></script> -->
+</body>
+</html>
